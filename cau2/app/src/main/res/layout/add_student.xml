@@ -1,0 +1,154 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    android:layout_height="match_parent"-->
+<!--  >-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal">-->
+<!--    <TextView-->
+<!--        android:text="Nhập thông tin sản phẩm"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="25dp"-->
+<!--        android:gravity="center"/>-->
+<!--        <ImageView-->
+<!--            android:src="@drawable/add"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="16dp"-->
+
+<!--            />-->
+<!--    </LinearLayout>-->
+
+<!--</LinearLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Container for TextView and ImageView -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#04A5ED"> <!-- Centers the items vertically within this container -->
+
+        <TextView
+            android:id="@+id/txtMasv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Nhập thông tin sản phẩm"
+            android:textSize="25sp"
+            android:gravity="center"
+           />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Add Icon"
+            android:src="@drawable/add" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"> <!-- Centers the items vertically within this container -->
+
+        <TextView
+            android:id="@+id/txtmasv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ma sinh vien"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtMasv"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="Add Icon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"> <!-- Centers the items vertically within this container -->
+
+        <TextView
+            android:id="@+id/txtten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ten"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtten"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="Add Icon"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="40dp"
+        android:weightSum="2"> <!-- Centers the items vertically within this container -->
+
+        <TextView
+            android:id="@+id/txtlop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="Lop"
+            android:textSize="25sp"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/edtlop"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:src="@drawable/add"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:layout_gravity="end|center_vertical"
+            android:contentDescription="Add Icon"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnAdd"
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"/>
+
+
+</LinearLayout>
